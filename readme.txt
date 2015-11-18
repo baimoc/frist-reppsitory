@@ -27,3 +27,14 @@ $ git reset --hard HEAD^^
 $ git reset --hard HEAD^98
 $ git reset --hard yourlogid(in log)
 $ git reflog
+
+# 生成SSH Key
+$ ssh-keygen -t rsa -C "stoneing1314@163.com"
+#目录中: id_rsa id_rsa.pub
+
+# 推送本地
+$ git remote add origin git@github.com:baimoc/firstgit.git
+# 第一次推送
+$ git push -u origin master
+# 之后的推送
+$ git push origin master
